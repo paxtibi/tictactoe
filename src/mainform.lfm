@@ -1,0 +1,106 @@
+object MainView: TMainView
+  Left = 319
+  Height = 287
+  Top = 250
+  Width = 375
+  Caption = 'Tris'
+  ClientHeight = 287
+  ClientWidth = 375
+  Position = poDesktopCenter
+  LCLVersion = '2.0.2.0'
+  object StaticText1: TStaticText
+    Left = 16
+    Height = 15
+    Top = 8
+    Width = 65
+    Caption = 'Giocatore 1'
+    TabOrder = 0
+  end
+  object StaticText2: TStaticText
+    Left = 152
+    Height = 17
+    Top = 8
+    Width = 65
+    Caption = 'Giocatore 2'
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 28
+    Height = 23
+    Top = 32
+    Width = 80
+    TabOrder = 2
+    Text = 'Player 1'
+  end
+  object Edit2: TEdit
+    Left = 153
+    Height = 23
+    Top = 32
+    Width = 80
+    AutoSize = False
+    TabOrder = 3
+    Text = 'Player 2'
+  end
+  object GameGrid: TDrawGrid
+    Left = 40
+    Height = 193
+    Top = 88
+    Width = 193
+    ColCount = 3
+    DefaultRowHeight = 64
+    ExtendedSelect = False
+    FixedCols = 0
+    FixedRows = 0
+    Flat = True
+    RowCount = 3
+    TabOrder = 4
+    OnClick = GameGridClick
+    OnDrawCell = GameGridDrawCell
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 248
+    Height = 65
+    Top = 8
+    Width = 112
+    AutoFill = True
+    Caption = 'Numero giocatori'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 45
+    ClientWidth = 108
+    ItemIndex = 1
+    Items.Strings = (
+      'Uno'
+      'Due'
+    )
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Gioca'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+  object turnPlayer1: TShape
+    Left = 8
+    Height = 20
+    Top = 32
+    Width = 20
+    Shape = stCircle
+  end
+  object turnPlayer2: TShape
+    Left = 132
+    Height = 20
+    Top = 32
+    Width = 20
+    Shape = stCircle
+  end
+end

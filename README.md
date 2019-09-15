@@ -1,2 +1,3 @@
 # tictactoe
-tic tac toe Lazarus Implementation
+Minimal tic tac toe Implementation
+Powered By Lazarus
